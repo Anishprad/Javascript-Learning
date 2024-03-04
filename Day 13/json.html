@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json converter</title>
+  </head>
+  <body>
+
+     <!-- converting stringify and parse -->
+    <script>
+      let arr = {
+        name: "Anish",
+        age: 26,
+        address: "Kirtipur",
+      };
+      console.log(arr);
+      let strarr = JSON.stringify(arr);
+
+      strarr = strarr.replace("Kirtipur", "Kirtipur01");
+      console.log(strarr);
+
+      newarr = JSON.parse(strarr);
+      console.log(newarr);
+    </script>
+  </body>
+</html>

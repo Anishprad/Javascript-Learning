@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let obj = [
+        {
+          name: "Harry",
+          address: "Kolkata",
+          age: 27,
+        },
+        {
+          name: "Ranbir",
+          address: "Mumbai",
+          age: 27,
+        },
+        {
+          name: "Harry",
+          address: "Hyderebad",
+          age: 27,
+        },
+      ];
+
+      for (i = 0; i < obj.length; i++) {
+        let postname = obj[i].name;
+        let postaddress = obj[i].address;
+        let postage = obj[i].age;
+        console.log(postname);
+        console.log(postaddress);
+        console.log(postage);
+      }
+
+      let str = JSON.stringify(obj);
+      console.log(str);
+      str = str.replace("address", "PermanentAddress");
+      console.log(str);
+      console.log(typeof str);
+      newobj = JSON.parse(str);
+      console.log(newobj);
+      console.log(typeof newobj);
+    </script>
+  </body>
+</html>
